@@ -21,7 +21,7 @@ exit_er()
   fi
 }
 exit_ok()
-{ # Check exit status of last command. If error (not 0) print message and stop execution
+{ # Check exit status of last command. If success (return 0) print a success message and continue
   if [[ "$?" -eq 0 ]]; then
     echo "$@"
   fi
